@@ -1,0 +1,109 @@
+/* css style*/
+html,
+body {
+    height: 100%;
+    /* /-webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: #e8f2f7;
+    /* font-family: "Poppines"; */
+    color: #3a334e;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.control {
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 56px;
+    padding: 0 0 0 5px;
+    border-radius: 6px;
+    background-color: #f4f5f7;
+    color: #5a4f79;
+    font-family: inherit;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.card {
+    width: 400px;
+    padding: 60px 30px 40px;
+    background-color: #ffff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card>img {
+    width: 240px;
+    margin-bottom: 20px;
+}
+
+.card>h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 30px;
+}
+
+.form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.form input.control::placeholder {
+    color: #aaa7bc;
+}
+
+.form>button.control {
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: #1c98dd;
+    color: #f9f9f9;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.password {
+    position: relative;
+}
+
+.toggle {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 30px;
+    height: 30px;
+    /* background: red; */
+    background-size: 85%;
+    background-image: url("show.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.toggle.showing {
+    background-image: url("hide.svg");
+}
+
+
+
+/* .label {
+    text-align: left;
+    font-size: 12px;
+    color: #cdcccc;
+    letter-spacing: 1.4px;
+} */
